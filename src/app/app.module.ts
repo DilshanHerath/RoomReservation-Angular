@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import {NgxSpinnerModule} from 'ngx-spinner';
 import { RoomReserveComponent } from './component/room-reserve/room-reserve.component';
+// import {MatDatepickerModule} from '@angular/material/datepicker';
+// import {MatSliderModule} from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { RoomReserveComponent } from './component/room-reserve/room-reserve.comp
     BrowserModule,
     AppRoutingModule,
     NgxSpinnerModule,
+    // MatDatepickerModule,
     AlertModule.forRoot({maxMessages: 5, timeout: 5000, position: 'right'}),
+    // MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

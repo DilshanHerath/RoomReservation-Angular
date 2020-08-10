@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AlertService} from 'ngx-alerts';
+import {NgxSpinnerService} from 'ngx-spinner';
 
 @Component({
   selector: 'app-room-reserve',
@@ -8,10 +9,15 @@ import {AlertService} from 'ngx-alerts';
 })
 export class RoomReserveComponent implements OnInit {
 
-  constructor(private alertService: AlertService) { }
+  constructor(private alertService: AlertService, private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
-   // mdbCarousel3d();
+    this.spinner.show();
+    setTimeout(() => {
+      this.spinner.hide();
+
+    }, 1000);
+
   }
 
 }
