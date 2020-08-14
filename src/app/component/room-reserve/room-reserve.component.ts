@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AlertService} from 'ngx-alerts';
 import {NgxSpinnerService} from 'ngx-spinner';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-room-reserve',
@@ -8,6 +9,9 @@ import {NgxSpinnerService} from 'ngx-spinner';
   styleUrls: ['./room-reserve.component.css']
 })
 export class RoomReserveComponent implements OnInit {
+  date: any;
+  serializedDate: any;
+  hideDelay: any;
 
   constructor(private alertService: AlertService, private spinner: NgxSpinnerService) { }
 
@@ -15,7 +19,7 @@ export class RoomReserveComponent implements OnInit {
     this.spinner.show();
     setTimeout(() => {
       this.spinner.hide();
-
+      this.hideDelay = new FormControl(10);
     }, 1000);
 
   }
