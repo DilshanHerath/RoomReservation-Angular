@@ -1,8 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
-
-
 import {AppRoutingModule} from './app-routing.module';
 import {AlertModule} from 'ngx-alerts';
 import {AppComponent} from './app.component';
@@ -21,13 +19,18 @@ import {NavbarComponent} from './component/navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import { AdminComponent } from './component/admin/admin.component';
+import { ProfileComponent } from './component/profile/profile.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     RoomReserveComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatSelectModule,
     MatButtonModule,
-    MDBBootstrapModule
+    MDBBootstrapModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

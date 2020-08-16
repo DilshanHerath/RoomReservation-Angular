@@ -63,12 +63,58 @@
        </mat-form-field>
 
      </div>
-     <div class="col-12 col-sm-12 col-md-5 col-xl-4">
-       <mat-form-field class="example-user-input" style="width: 100%">
-         <mat-label>Required Room</mat-label>
-         <input matInput type="number"
-                aria-label="Adds a delay between hovering away from the button and hiding the tooltip">
-       </mat-form-field>
+     <div class="row p-0 m-0 col-12 col-sm-12 col-md-5 col-xl-4 ">
+       <div class="col-6 col-sm-6 col-md-6 col-xl-3 ">
+         <mat-form-field appearance="fill" style="width: 100%">
+           <mat-label>Adult</mat-label>
+           <mat-select disableRipple>
+             <mat-option value="1">1</mat-option>
+             <mat-option value="2">2</mat-option>
+             <mat-option value="2">3</mat-option>
+             <mat-option value="2">4</mat-option>
+             <mat-option value="2">5</mat-option>
+             <mat-option value="2">6</mat-option>
+             <mat-option value="2">7</mat-option>
+             <mat-option value="2">8</mat-option>
+             <mat-option value="2">9</mat-option>
+             <mat-option value="2">10</mat-option>
+           </mat-select>
+         </mat-form-field>
+       </div>
+       <div class="col-6 col-sm-6 col-md-6 col-xl-3">
+         <mat-form-field appearance="fill" style="width: 100%">
+           <mat-label>Child</mat-label>
+           <mat-select disableRipple>
+             <mat-option value="1">1</mat-option>
+             <mat-option value="2">2</mat-option>
+             <mat-option value="2">3</mat-option>
+             <mat-option value="2">4</mat-option>
+             <mat-option value="2">5</mat-option>
+             <mat-option value="2">6</mat-option>
+             <mat-option value="2">7</mat-option>
+             <mat-option value="2">8</mat-option>
+             <mat-option value="2">9</mat-option>
+             <mat-option value="2">10</mat-option>
+           </mat-select>
+         </mat-form-field>
+       </div>
+       <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+         <mat-form-field appearance="fill" style="width: 100%">
+           <mat-label>Required Room</mat-label>
+           <mat-select disableRipple>
+             <mat-option value="1">1</mat-option>
+             <mat-option value="2">2</mat-option>
+             <mat-option value="2">3</mat-option>
+             <mat-option value="2">4</mat-option>
+             <mat-option value="2">5</mat-option>
+             <mat-option value="2">6</mat-option>
+             <mat-option value="2">7</mat-option>
+             <mat-option value="2">8</mat-option>
+             <mat-option value="2">9</mat-option>
+             <mat-option value="2">10</mat-option>
+           </mat-select>
+         </mat-form-field>
+       </div>
      </div>
    </div>
  </div>
@@ -95,25 +141,21 @@
   <br>
   <div style="justify-content: center;display: flex">
     <div class="row" style="justify-content: space-around;width: 100%">
-      <div class="col-12 col-sm-12 col-md-5 col-xl-4 ">
-        <mat-form-field appearance="fill" style="width: 100%">
-          <mat-label>Payment Type</mat-label>
-          <mat-select disableRipple>
-            <mat-option value="1">Card</mat-option>
-            <mat-option value="2">Cash</mat-option>
-            <mat-option value="3">Option 3</mat-option>
-          </mat-select>
-        </mat-form-field>
-
-
-      </div>
       <div class="col-12 col-sm-12 col-md-5 col-xl-4">
-
         <mat-form-field appearance="fill" style="width: 100%">
           <mat-label>Amount</mat-label>
           <input matInput type="number" class="example-right-align">
           <span matPrefix>LKR   &nbsp;</span>
           <span matSuffix>.00</span>
+        </mat-form-field>
+      </div>
+      <div class="col-12 col-sm-12 col-md-5 col-xl-4 ">
+        <mat-form-field appearance="fill" style="width: 100%">
+          <mat-label>Payment Type</mat-label>
+          <mat-select disableRipple>
+            <mat-option value="1">Credit</mat-option>
+            <mat-option value="2">Debit</mat-option>
+          </mat-select>
         </mat-form-field>
       </div>
     </div>
