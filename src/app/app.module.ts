@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import {AppRoutingModule} from './app-routing.module';
 import {AlertModule} from 'ngx-alerts';
@@ -22,6 +22,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { AdminComponent } from './component/admin/admin.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { LoginComponent } from './component/login/login.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     RoomReserveComponent,
     NavbarComponent,
     AdminComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -50,10 +53,14 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatSelectModule,
     MatButtonModule,
     MDBBootstrapModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatExpansionModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule {
 }
