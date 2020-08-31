@@ -1,0 +1,34 @@
+<div>
+  <div style="justify-content: center;align-items: center;display: flex;height: 100vh">
+    <div style="width: 40%;height: 450px;border: 2px solid #0f0f0f;background-color: transparent">
+      <div style="margin-top: 5%">
+        <h1 class="txtwelcom" style="text-align: center">SeaCoast</h1>
+      </div>
+      <div class="col-12 mt-5" style="justify-content: center;display: flex">
+          <mat-form-field appearance="fill" style="width: 80%">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+      </div>
+      <div class="col-12" style="margin-top: 10%;padding: 0">
+        <div class="col-12" style="justify-content: center;display: flex">
+          <mat-form-field appearance="fill" style="width: 80%">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+
+        </div>
+        <div class="col-11 mt-2" style="text-align: end">
+          <label for="" style="color: white;font-size: 12px">Create new Account</label>
+        </div>
+        <div style="justify-content: center;display: flex;width: 100%;margin-top: 5%">
+          <button style="width: 50%;margin-top: 1%;background: black;color: orange;border-radius: 10px" type="button" (click)="login()" class="btn btn-primary" >Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

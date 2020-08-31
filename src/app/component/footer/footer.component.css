@@ -1,0 +1,138 @@
+body{
+  background: #EEEEEE;
+}
+
+.txttel{
+  font-size: 1vw;
+  margin-left: 9%;
+}
+
+.txttel2{
+  margin-left: 46.7%;
+  font-size: 14px;
+}
+.ftext{
+  font-size: 1.5vw;
+}
+.descriptiondiv{
+  text-align: center;
+  padding: 20px;
+  width: 60%
+}
+.loc
+{
+  margin-left: 33%;
+}
+
+.img:hover {
+  width: 2vw;
+  transition-delay: 0.5s;
+  cursor: pointer;
+}
+
+.img2:hover {
+  width: 2.5vw;
+}
+
+@media only screen and  (max-width: 320px) {
+
+  .img2 {
+    width: 5vw;
+  }
+
+
+  .ftext{
+    font-size: 10px;
+  }
+
+  .loc{
+    margin-left: 25%;
+  }
+
+  .img{
+    width: 5vw;
+  }
+  .descriptiondiv{
+    width: 100%
+  }
+}
+
+
+@media only screen and  (min-width: 320px)and (max-width: 375px){
+  .txttel2{
+    margin-left: 40%;
+    font-size: 8px;
+  }
+  .txttel{
+    font-size: 8px;
+  }
+  .txttel{
+    margin-left: 8%;
+  }
+
+  .descriptiondiv {
+    width: 100%
+  }
+}
+
+@media only screen and  (min-width: 375px)and (max-width: 425px){
+  .txttel2{
+    margin-left: 46%;
+    font-size: 9px;
+  }
+  .ftext{
+    font-size: 9px;
+  }
+  .txttel{
+    font-size: 9px;
+    margin-left: 8%;
+  }
+
+  .descriptiondiv {
+    width: 100%
+  }
+}
+
+@media only screen and  (min-width: 425px)and (max-width: 575px){
+  .txttel{
+    font-size: 9px;
+  }
+  .txttel2{
+    font-size: 9px;
+    margin-left: 47.7%;
+  }
+  .ftext{
+    font-size: 12px;
+  }
+}
+
+@media only screen and  (min-width: 575px)and (max-width: 675px){
+  .txttel2{
+    margin-left: 48%;
+    font-size: 13px;
+  }
+  .txttel{
+    font-size: 13px;
+    margin-left: 8%;
+  }
+  .ftext{
+    font-size: 16px;
+  }
+}
+
+@media only screen and  (min-width: 675px)and (max-width: 768px){
+  .txttel2{
+    margin-left: 46%;
+    font-size: 12px;
+  }
+  .txttel{
+    font-size: 12px;
+    margin-left: 8%;
+  }
+  .ftext{
+    font-size: 15px;
+  }
+}
+
+@media only screen and  (min-width: 768px)and (max-width: 991px){}
+@media only screen and  (min-width: 991px){}
