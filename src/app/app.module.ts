@@ -24,6 +24,7 @@ import { ProfileComponent } from './component/profile/profile.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LoginComponent } from './component/login/login.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { LoginComponent } from './component/login/login.component';
     NavbarComponent,
     AdminComponent,
     ProfileComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -42,7 +42,7 @@
 /*}*/
 .div{
   background-color: #f27409;
-  box-shadow: 0 4px 8px 0 rgb(226 142 35), 0 -3px 0px 0 rgb(0 0 0 0.2);
+  box-shadow: 0 4px 8px 0 rgb(226 142 35), 0 -3px 0px 0 rgb(0 0  0.2);
 }
 
 .txtwelcom{
@@ -78,7 +78,7 @@
 }
 .div2{
   border: orange solid 1px;
-  /*box-shadow: 0 2px 26px 0 #b56522;*/
+   /*box-shadow: 0 2px 26px 0 #b56522;*/
 }
 .div2:hover{
   box-shadow: 0 0 16px 0 #b56522;

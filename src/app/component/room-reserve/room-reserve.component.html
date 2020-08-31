@@ -24,20 +24,20 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<div style="background: lightslategray">
-  <div class="row"  style="margin-left: 10%;">
-    <h2  style="margin-top: 3%">Room ID : </h2>
-    <h2  style="margin-left: 2%;margin-top: 3%;color: darkorange">L001</h2>
+<div style="background: #bababa">
+  <div class="row"  style="width: 100%">
+    <h2  style="margin-top: 3%;margin-left: 10.5%;color: white">Room ID : </h2>
+    <h2  style="margin-left: 2%;margin-top: 3%;color: #40c736">L001</h2>
   </div>
   <div>
     <div style="text-align: center;margin-top: 3%">
-      <h1>Room Type</h1>
+      <h1 style="color: black">Room Type</h1>
 
       <div class="col-12 justify-content-center" >
         <div class="row" style="justify-content: space-around">
           <div class="col-12 col-sm-12 col-md-5 col-xl-4" >
             <mat-form-field appearance="fill" style="width: 100%">
-              <mat-label style="color: white">Arrival Date</mat-label>
+              <mat-label style="color: black">Arrival Date</mat-label>
               <input matInput [matDatepicker]="picker1">
               <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
               <mat-datepicker #picker1></mat-datepicker>
@@ -46,7 +46,7 @@
 
           <div class="col-12 col-sm-12 col-md-5 col-xl-4">
             <mat-form-field appearance="fill" style="width: 100% ">
-              <mat-label style="color: white">Depature Date</mat-label>
+              <mat-label style="color: black">Depature Date</mat-label>
               <input matInput [matDatepicker]="picker">
               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
@@ -60,9 +60,9 @@
     <br>
     <div style="justify-content: center;display: flex">
       <div class="row" style="justify-content: space-around;width: 100%">
-        <div class="col-12 col-sm-12 col-md-5 col-xl-4 ">
-          <mat-form-field appearance="fill" style="width: 100%">
-            <mat-label style="color: white">Available Room</mat-label>
+        <div class="col-12 col-sm-12 col-md-5 col-xl-4">
+          <mat-form-field appearance="fill" style="width: 100%;">
+            <mat-label style="color: black">Available Room</mat-label>
             <input matInput disabled>
           </mat-form-field>
 
@@ -70,7 +70,7 @@
         <div class="row p-0 m-0 col-12 col-sm-12 col-md-5 col-xl-4 ">
           <div class="col-6 col-sm-6 col-md-6 col-xl-3 ">
             <mat-form-field appearance="fill" style="width: 100%">
-              <mat-label style="color: white">Adult</mat-label>
+              <mat-label style="color: black">Adult</mat-label>
               <mat-select disableRipple>
                 <mat-option value="1">1</mat-option>
                 <mat-option value="2">2</mat-option>
@@ -87,7 +87,7 @@
           </div>
           <div class="col-6 col-sm-6 col-md-6 col-xl-3">
             <mat-form-field appearance="fill" style="width: 100%">
-              <mat-label style="color: white">Child</mat-label>
+              <mat-label style="color: black">Child</mat-label>
               <mat-select disableRipple>
                 <mat-option value="1">1</mat-option>
                 <mat-option value="2">2</mat-option>
@@ -104,7 +104,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-xl-6">
             <mat-form-field appearance="fill" style="width: 100%">
-              <mat-label style="color: white">Required Room</mat-label>
+              <mat-label style="color: black">Required Room</mat-label>
               <mat-select disableRipple>
                 <mat-option value="1">1</mat-option>
                 <mat-option value="2">2</mat-option>
@@ -129,14 +129,14 @@
       <div class="row" style="justify-content: space-around;width: 100%">
         <div class="col-12 col-sm-12 col-md-5 col-xl-4 ">
           <mat-form-field appearance="fill" style="width: 100%">
-            <mat-label style="color: white">Total</mat-label>
+            <mat-label style="color: black">Total</mat-label>
             <input matInput disabled>
           </mat-form-field>
 
         </div>
         <div class="col-12 col-sm-12 col-md-5 col-xl-4">
           <mat-form-field appearance="fill" style="width: 100%">
-            <mat-label style="color: white">Discount</mat-label>
+            <mat-label style="color: black">Discount</mat-label>
             <input matInput disabled>
           </mat-form-field>
         </div>
@@ -147,7 +147,7 @@
       <div class="row" style="justify-content: space-around;width: 100%">
         <div class="col-12 col-sm-12 col-md-5 col-xl-4">
           <mat-form-field appearance="fill" style="width: 100%">
-            <mat-label style="color: white">Amount</mat-label>
+            <mat-label style="color: black">Amount</mat-label>
             <input matInput type="number" class="example-right-align" disabled>
             <span matPrefix>LKR   &nbsp;</span>
             <span matSuffix>.00</span>
@@ -155,7 +155,7 @@
         </div>
         <div class="col-12 col-sm-12 col-md-5 col-xl-4 ">
           <mat-form-field appearance="fill" style="width: 100%">
-            <mat-label style="color: white">Payment Type</mat-label>
+            <mat-label style="color: black">Payment Type</mat-label>
             <mat-select disableRipple>
               <mat-option value="1">Credit</mat-option>
               <mat-option value="2">Debit</mat-option>
@@ -168,7 +168,7 @@
     <br>
     <div style="justify-content: center;display: flex">
       <div class="col-12 col-sm-12 col-md-8 col-xl-8">
-        <button type="button" (click)="roomReserve()" class="btn btn-primary" style="background: linear-gradient(-90deg, orange, black);width: 100%;height: 50px;color: white">Reserve</button>
+        <button type="button" (click)="roomReserve()" class="btn btn-primary" style="background: #0a0a0a;width: 100%;height: 50px;color: orange">Reserve</button>
       </div>
     </div>
     <br>
