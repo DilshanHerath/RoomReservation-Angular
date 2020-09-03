@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {NgxSpinnerService} from 'ngx-spinner';
 import {AlertService} from 'ngx-alerts';
-import {ImagePickerConf} from 'ngp-image-picker';
 
 @Component({
   selector: 'app-profile',
@@ -10,12 +9,6 @@ import {ImagePickerConf} from 'ngp-image-picker';
 })
 export class ProfileComponent implements OnInit {
   isDisabled = true;
-  imagePickerConf: ImagePickerConf = {
-    borderRadius: '4px',
-    language: 'en',
-    width: '320px',
-    height: '240px',
-  };
 
   constructor(private alertService: AlertService, private spinner: NgxSpinnerService) {
   }

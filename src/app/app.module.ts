@@ -25,7 +25,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LoginComponent } from './component/login/login.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { NgpImagePickerModule } from 'ngp-image-picker';
 
 @NgModule({
   declarations: [
@@ -58,7 +57,6 @@ import { NgpImagePickerModule } from 'ngp-image-picker';
     MDBBootstrapModule,
     MatCheckboxModule,
     MatExpansionModule,
-    NgpImagePickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

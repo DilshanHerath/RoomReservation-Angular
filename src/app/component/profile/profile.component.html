@@ -1,14 +1,10 @@
 <div style="background: lightslategray">
   <div style="justify-content: center;display: flex">
-<!--    <img style="width: 15%;height: 200px;border-radius: 100%;margin-top: 5%" src="../../../assets/img/juniour.jpg" alt="alt" solid>-->
-    <ngp-image-picker
-      [_config]="imagePickerConf"
-      ($imageChanged)="onImageChange($event)"
-    ></ngp-image-picker>
+    <img style="width: 15%;height: 200px;border-radius: 100%;margin-top: 5%" src="../../../assets/img/juniour.jpg" alt="alt" solid>
   </div>
   <div style="justify-content: center;display: flex;margin-top: 5%">
-    <div style="width: 80%">
-      <div class="row">
+    <div style="width: 90%">
+      <div class="row" style="justify-content: space-around;display: flex" >
         <div class="col-12 col-sm-12 col-md-6 col-xl-6 " style="border-right: 2px solid #dbd8cc">
           <div>
             <h2 style="color: black">Basic Information</h2>
@@ -46,11 +42,11 @@
           <div class="col-12 col-sm-12 col-md-12 col-xl-12 mt-5 mb-5">
             <div class="row">
               <div class="col-6">
-                <button style="width: 100%" type="button" class="btn btn-danger">Cancel</button>
+                <button type="button" class="btn btn-primary" style="background: #0a0a0a;width: 100%;height: 50px;color: orange">Cancel</button>
 
               </div>
               <div class="col-6">
-                <button style="width: 100%" type="button" (click)="btnsave()" class="btn btn-primary">Save</button>
+                <button type="button" (click)="btnsave()" class="btn btn-primary" style="background: #0a0a0a;width: 100%;height: 50px;color: orange">Save</button>
               </div>
             </div>
 
@@ -85,7 +81,8 @@
           </div>
           <div style="margin-top: 13%">
             <div style="justify-content: center;display: flex;width: 100%">
-              <button style="width: 50%;margin-top: 1%" type="button" class="btn btn-primary" (click)="createAccount()" [disabled]="isDisabled">Create</button>
+              <button type="button" (click)="createAccount()" class="btn btn-primary" [disabled]="isDisabled" style="background: #0a0a0a;width: 100%;height: 50px;color: orange">Create</button>
+<!--              <button style="width: 50%;margin-top: 1%" type="button" class="btn btn-primary" (click)="createAccount()" [disabled]="isDisabled">Create</button>-->
             </div>
           </div>
         </div>

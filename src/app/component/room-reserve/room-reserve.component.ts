@@ -26,6 +26,6 @@ export class RoomReserveComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   roomReserve() {
-    this.alertService.success('Room Reserved');
+    this.alertService.danger('Please sign in first!');
   }
 }
