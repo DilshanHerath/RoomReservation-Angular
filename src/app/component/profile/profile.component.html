@@ -1,6 +1,10 @@
 <div style="background: lightslategray">
   <div style="justify-content: center;display: flex">
-    <img style="width: 15%;height: 200px;border-radius: 100%;margin-top: 5%" src="../../../assets/img/juniour.jpg" alt="alt" solid>
+<!--    <img style="width: 15%;height: 200px;border-radius: 100%;margin-top: 5%" src="../../../assets/img/juniour.jpg" alt="alt" solid>-->
+    <ngp-image-picker
+      [_config]="imagePickerConf"
+      ($imageChanged)="onImageChange($event)"
+    ></ngp-image-picker>
   </div>
   <div style="justify-content: center;display: flex;margin-top: 5%">
     <div style="width: 80%">
